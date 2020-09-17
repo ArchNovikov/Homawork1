@@ -1,4 +1,4 @@
-package com.Novikov.homeworks.homework1;
+package com.novikov.homeworks.homework1;
 
 public class Task1 {
 

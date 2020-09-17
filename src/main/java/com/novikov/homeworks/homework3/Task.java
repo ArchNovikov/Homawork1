@@ -1,4 +1,4 @@
-package com.Novikov.homeworks.homework3;
+package com.novikov.homeworks.homework3;
 
 public class Task {
     public static void task1() {

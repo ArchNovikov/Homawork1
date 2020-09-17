@@ -1,4 +1,4 @@
-package com.Novikov.homeworks.homework2;
+package com.novikov.homeworks.homework2;
 
 public class Main {
     public static void main(String[] args) {
