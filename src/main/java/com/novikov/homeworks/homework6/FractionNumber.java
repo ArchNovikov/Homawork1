@@ -7,8 +7,13 @@ public class FractionNumber implements Fraction {
     private final int denominator;
 
     public FractionNumber(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
+        if (denominator == 0){
+            throw new IllegalArgumentException("Not");
+        }
+        else {
+            this.numerator = numerator;
+            this.denominator = denominator;
+        }
     }
 
 
@@ -64,9 +69,11 @@ public class FractionNumber implements Fraction {
 
 
     public Fraction divide(Fraction fraction) {
-        FractionNumber fractionNumber3 = new FractionNumber(getNumerator() * fraction.getDenominator(), getDenominator() * fraction.getNumerator());
-        System.out.println(fractionNumber3.numerator + "/" + fractionNumber3.denominator);
-        return fractionNumber3;
+
+            FractionNumber fractionNumber3 = new FractionNumber(getNumerator() * fraction.getDenominator(), getDenominator() * fraction.getNumerator());
+            System.out.println(fractionNumber3.numerator + "/" + fractionNumber3.denominator);
+            return fractionNumber3;
+
     }
 
     @Override
